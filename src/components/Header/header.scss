@@ -1,0 +1,36 @@
+header {
+  width: clamp(768px, 125vw, 960px);
+  height: clamp(583px, 100vw, 1080px);
+  background-image: url("../../../static/images/header.png");
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: clamp(87px, 28.1vw, 216px) 0 clamp(28px, 5.7vw, 44px)
+    clamp(18px, 4.7vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 970px) {
+    & {
+      width: 100vw;
+    }
+  }
+
+  h1 {
+    width: 56%;
+  }
+
+  span {
+    display: block;
+    margin-top: 10px;
+    font-size: clamp(16px, 3.125vw, 24px);
+    color: #7e7876;
+  }
+  .socials {
+    width: 132px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
