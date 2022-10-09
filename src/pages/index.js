@@ -7,9 +7,9 @@ import optinImg from "../../static/images/optin.svg"
 
 export default function Home() {
   return (
-    <div>
+    <div className="Home">
       <Navbar />
-      <div className="Home">
+      <div className="first-section">
         <div className="left-side">
           <h1>
             ¿Quieres que tu tienda venda más con ayuda de la tecnología?
