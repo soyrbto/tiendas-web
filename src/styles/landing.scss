@@ -16,33 +16,47 @@
     }
 
     h1 {
-      font-size: clamp(24px, 4.68vw, 40px);
-      width: clamp(377px, 90vw, 758px);
-      line-height: 54px;
+      font-size: clamp(20px, 4.68vw, 40px);
+      width: clamp(350px, 90vw, 758px);
+      line-height: clamp(35px, 4.56vw, 54px);
       margin-bottom: 12px;
       font-weight: 700;
+
+      @media only screen and (max-width: 768px) {
+        & {
+          text-align: center;
+        }
+      }
     }
 
     li {
       color: #373332;
       line-height: 24px;
       margin-bottom: 0px;
+      font-size: clamp(14px, 2.08vw, 16px);
     }
 
     .subtitle {
       color: #7e7876;
       font-family: 20px;
+      margin: 0 clamp(18px, 4.95vw, 38px);
+
+      @media only screen and (max-width: 768px) {
+        & {
+          text-align: center;
+        }
+      }
     }
 
     .left-side {
-      flex: 0.75;
-
+      flex: 0.8;
       @media only screen and (max-width: 1606px) {
         & {
-          padding: 0 clamp(10px, 4.95vw, 18px);
+          // padding: 0 clamp(10px, 4.95vw, 18px);
           display: flex;
           flex-direction: column;
           align-items: center;
+          // flex: 1;
         }
       }
     }
