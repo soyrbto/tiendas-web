@@ -1,6 +1,6 @@
 .Navbar {
   background-color: white;
   img {
-    margin: 11px 0px 11px 120px;
+    margin: 11px 0px 11px clamp(18px, 12.1vw, 120px);
   }
 }

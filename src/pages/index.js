@@ -1,9 +1,9 @@
 import React from "react"
 import Navbar from "../components/Navbar/Navbar"
 import Optin from "../components/Optin/Optin"
+import optinImg from "../../static/images/optin.svg"
 import "../styles/landing.scss"
 import "../styles/global.scss"
-import optinImg from "../../static/images/optin.svg"
 
 export default function Home() {
   return (
@@ -52,6 +52,8 @@ export default function Home() {
           </ul>
         </div>
         <img
+          width="756"
+          height="693"
           src={optinImg}
           alt="book of how to get the best use of a online store"
         />
